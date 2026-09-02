@@ -41,4 +41,3 @@ function getDayType(day){
     };
 };
 
-console.log(getDayType("Bandarban"));
