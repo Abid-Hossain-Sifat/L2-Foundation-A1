@@ -41,3 +41,21 @@ function getDayType(day){
     };
 };
 
+
+//--------- Problem 03 ---------//
+
+function validateUsername(username){
+    if(username.length < 4){
+        return "Too Short";
+    };
+    if(username.includes(" ")){
+        return "No Space Allowed";
+    };
+    if(username.toLowerCase().includes("admin")){
+        return "Reserve Word";
+    }
+    return "Available"
+};
+
+
+//--------- Problem 04 ---------//
