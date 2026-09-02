@@ -12,3 +12,33 @@ function describeValue(value){
 
     return type + " | " + check;
 }
+
+
+//--------- Problem 02 ---------//
+
+function getDayType(day){
+    let lowerCaseDay = day.toLowerCase();
+
+    switch(lowerCaseDay){
+        //weekend
+        case "friday":
+            case "saturday":
+
+            return "Weekend";
+
+
+        //Working Day
+        case "sunday":
+            case "monday":
+                case "tuesday":
+                    case "wednesday":
+                        case "thursday":
+
+                        return "Working Day";
+
+        default:
+            return "Invalid Day"
+    };
+};
+
+console.log(getDayType("Bandarban"));
